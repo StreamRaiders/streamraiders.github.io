@@ -23,6 +23,7 @@ permalink: /ratings/
       <th>Battles<br/>on record</th>
       <th title="Each action performed with over 5 minutes delay is a -1 rating. Each perfectly completed battle is a +0.01 rating.">Reliability<br/>rating</th>
       <th title="Higher rating means faster event tiers!">Effective<br/>rating</th>
+      <th>Efficiency</th>
     </tr>
   </thead>
   {% for entry in site.data.lames %}
@@ -31,10 +32,11 @@ permalink: /ratings/
   <tr>
     {% assign battles = entry[1].c | plus: entry[1].l %}
     {% assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l %}
-    {% assign battlesPerDay = battles | divided_by: daysSince %}
-    {% assign factor = rating | divided_by: battles | times: 100.0 %}
-    {% assign effective = factor | times: battlesPerDay | round: 2 %}
-    <td> {% if site.data.names contains my_key %} {{ site.data.names[my_key] }} {% else %} <b>MISSING NAME, SORRY</b> {% endif %} </td><td> {{ battles }} </td><td> {{ rating }} </td><td> {{ effective }} </td>
+    {% assign battlesPerDay = battles | times: 1.0 | divided_by: daysSince %}
+    {% assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 %}
+    {% assign effective2 = rating | plus: battlesPerDay | round: 2 %}
+    {% assign efficiency = entry[1].c | times: 100.0 | divided_by: battles | round: 2 %}
+    <td> {% if site.data.names contains my_key %} {{ site.data.names[my_key] }} {% else %} <b>MISSING NAME, SORRY</b> {% endif %} </td><td> {{ battles }} </td><td> {{ rating }} </td><td> {{ effective1 }} </td><td> {{ efficiency }}&#37; </td>
   </tr>
   {% endunless %}
   {% endfor %}
@@ -49,7 +51,7 @@ $(document).ready( function () {
     "scrollY": 300,
     "info": false,
     "deferRender": true,
-    "order": [[ 2, "desc" ], [ 1, "asc" ], [ 3, "desc" ]]
+    "order": [[ 3, "desc" ], [ 1, "asc" ], [ 2, "desc" ], [ 4, "desc"]]
   });
 } );
 </script>
