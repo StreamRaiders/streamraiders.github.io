@@ -28,11 +28,14 @@ permalink: /ratings/
   <tr>
     {%- assign battles = entry[1].c | plus: entry[1].l -%}
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
-    {%- assign battlesPerDay = battles | times: 1.0 | divided_by: daysSince -%}
-    {%- assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 -%}
-    {%- assign effective2 = rating | plus: battlesPerDay | round: 2 -%}
+    {%- assign effective3 = entry[1].c | minus: entry[1].l | times: 1.0 | divided_by: daysSince | round: 2 -%}
     {%- assign efficiency = entry[1].c | times: 100.0 | divided_by: battles | round: 2 -%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective1 }}</td><td>{{ efficiency }}%</td></tr>
+    {%- comment-%}
+      {%- assign battlesPerDay = battles | times: 1.0 | divided_by: daysSince -%}
+      {%- assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 -%}
+      {%- assign effective2 = rating | plus: battlesPerDay | round: 2 -%}
+    {%- endcomment-%}
+    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>
