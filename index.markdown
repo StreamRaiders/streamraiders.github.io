@@ -13,4 +13,5 @@ title: Main
 ### All data is randomly collected from publicly available information.
 ### Stats are available over the links in the top bar.
 
-###### Data is updated at least at the start of each new event.
+#### Data is updated at least at the start of each new event.
+##### Last update: {{ 'today' | date: '%B %e, %Y' }}

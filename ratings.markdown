@@ -4,7 +4,9 @@ layout: page
 title: Ratings
 permalink: /ratings/
 ---
-# Since March 24, 2022 (Pixel Shogunate event)
+#### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
+###### P.S. If you are as blind as Hooks, you can hover over some column headers for an explanation.
+###### You can sort the table by clicking said column headers or even search for specific captains using the Search box.
 
 {%- assign today = site.time | date: '%s' -%}
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
@@ -49,7 +51,7 @@ $(document).ready( function () {
     "scrollY": 300,
     "info": false,
     "deferRender": true,
-    "order": [[ 3, "desc" ], [ 1, "asc" ], [ 2, "desc" ], [ 4, "desc"]]
+    "order": [[ 2, "desc" ], [ 1, "asc" ], [ 3, "desc" ], [ 4, "desc"]]
   });
 } );
 </script>
