@@ -4,7 +4,6 @@ layout: page
 title: Botters
 permalink: /botters/
 ---
-
 ###### Not really in the theme of the website, but still...
 # The following players have violated the [Guidelines](https://captain.tv/guidelines) by operating multiple accounts through third-party clients in an automated manner.
 #### They have admitted on multiple occasions to have extensive knowledge about bot operations.
@@ -16,7 +15,7 @@ permalink: /botters/
 
 <table>
 {% tablerow botter in allbotters cols:5 %}
-  {{ botter }}
+  <a href="https://www.streamraiders.com/report/" target="_blank">{{ botter }}</a>
 {% endtablerow %}
 </table>
 

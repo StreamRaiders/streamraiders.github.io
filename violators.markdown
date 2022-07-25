@@ -4,8 +4,7 @@ layout: page
 title: Violators
 permalink: /violators/
 ---
-
-# The following captains have violated the [Guidelines](https://captain.tv/guidelines) by allowing, supporting, promoting, encouraging or spreading toxicity and harassment in their communities.
+# The following captains have violated the [Guidelines](https://captain.tv/guidelines) by allowing, supporting, promoting, encouraging or spreading harassment in their communities.
 ###### Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual.
 
 > [2 July, 2022] ctv_kermond: ... calling out specific Captains is a specific no-no - you can use the Reporting function for that!
@@ -29,7 +28,7 @@ permalink: /violators/
 
 <table>
 {% tablerow violator in allviolators cols:5 %}
-  <a href="https://twitch.tv/{{ violator }}">{{ violator }}</a>
+  <a href="https://www.streamraiders.com/report/" target="_blank">{{ violator }}</a>
 {% endtablerow %}
 </table>
 

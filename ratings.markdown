@@ -8,6 +8,8 @@ permalink: /ratings/
 ###### P.S. If you are as blind as Hooks, you can hover over some column headers for an explanation.
 ###### You can sort the table by clicking said column headers or even search for specific captains using the Search box.
 
+# Honorary *MOST WHOLESOME CAPTAIN* :hugs: <a href="https://twitch.tv/KMTlol" target="_blank">KMTlol</a> :hugs:
+
 {%- assign today = site.time | date: '%s' -%}
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
 {%- assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 -%}
@@ -37,7 +39,7 @@ permalink: /ratings/
       {%- assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 -%}
       {%- assign effective2 = rating | plus: battlesPerDay | round: 2 -%}
     {%- endcomment-%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
+    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>
