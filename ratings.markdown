@@ -8,7 +8,7 @@ permalink: /ratings/
 ###### P.S. If you are as blind as Hooks, you can hover over some column headers for an explanation.
 ###### You can sort the table by clicking said column headers or even search for specific captains using the Search box.
 
-# Honorary *MOST WHOLESOME CAPTAIN* :hugs: <a href="https://twitch.tv/KMTlol" target="_blank">KMTlol</a> :hugs:
+# Captains promoting this website to their community during an event will get a shoutout here for the duration of the next event.
 
 {%- assign today = site.time | date: '%s' -%}
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
@@ -28,9 +28,9 @@ permalink: /ratings/
   </thead>
   {%- for entry in site.data.lames -%}
   {%- assign my_key = entry[0] | string -%}
-  {% unless site.data.violators contains my_key %}
+  {%- assign battles = entry[1].c | plus: entry[1].l -%}
+  {% unless site.data.violators contains my_key or battles < daysSince %}
   <tr>
-    {%- assign battles = entry[1].c | plus: entry[1].l -%}
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
     {%- assign effective3 = entry[1].c | minus: entry[1].l | times: 1.0 | divided_by: daysSince | round: 2 -%}
     {%- assign efficiency = entry[1].c | times: 100.0 | divided_by: battles | round: 2 -%}
@@ -39,7 +39,7 @@ permalink: /ratings/
       {%- assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 -%}
       {%- assign effective2 = rating | plus: battlesPerDay | round: 2 -%}
     {%- endcomment-%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
+    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" rel="noopener noreferrer">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>
@@ -52,7 +52,7 @@ $(document).ready( function () {
     "paging": false,
     "scrollY": 300,
     "info": false,
-    "deferRender": true,
+    "deferRender": false,
     "order": [[ 2, "desc" ], [ 1, "asc" ], [ 3, "desc" ], [ 4, "desc"]]
   });
 } );

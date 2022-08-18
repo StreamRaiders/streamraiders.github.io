@@ -21,9 +21,7 @@
 title: How reliable are the captains, really?
 # email: support@captain.tv
 description: >- # this means to ignore newlines until "baseurl:"
-  How well are the captains following the Guidelines?
-  How reliable are the captains in running their battles, contrary to their claims?
-  All data is randomly collected from publicly available information.
+  How good are Stream Raiders captains following the Guidelines and reliably running battles, really?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: StreamRaiders
