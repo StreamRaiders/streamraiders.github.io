@@ -7,8 +7,8 @@ layout: home
 title: Main
 ---
 
-## How well are captains at following the Guidelines?
-## How reliable are captains in running their battles, contrary to their claims?
+## How well are Stream Raiders captains at following the Guidelines?
+## How reliable are Stream Raiders captains in running their battles, contrary to their claims?
 
 ### All data is randomly collected from publicly available information.
 ### Stats are available over the links in the top bar.

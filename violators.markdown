@@ -4,7 +4,7 @@ layout: page
 title: Violators
 permalink: /violators/
 ---
-##### The following captains have violated the [Guidelines](https://captain.tv/guidelines) by allowing, supporting, promoting, encouraging or spreading harassment in their communities. Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual.
+##### The following Stream Raiders captains have violated the [Guidelines](https://captain.tv/guidelines) by allowing, supporting, promoting, encouraging or spreading harassment in their communities. Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual.
 ###### If you are as blind as bigheadmikebmx, the reason is "Harassment": specifically bullying and insulting the players as well as prompting other to behave this way.
 
 **P.S.** If you got banned by one of these captains while they were in your favorites and now you have a blank favorite taking up space on your captain selection screen - get in touch, we can help you remove them.
