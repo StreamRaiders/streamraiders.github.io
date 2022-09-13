@@ -4,17 +4,24 @@ layout: page
 title: Violators
 permalink: /violators/
 ---
-##### The following Stream Raiders captains have violated the [Guidelines](https://captain.tv/guidelines) by allowing, supporting, promoting, encouraging or spreading harassment in their communities. Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual.
-###### If you are as blind as bigheadmikebmx, the reason is "Harassment": specifically bullying and insulting the players as well as prompting other to behave this way.
+<div style="display: flex">
+<div style="flex: 1">
 
-**P.S.** If you got banned by one of these captains while they were in your favorites and now you have a blank favorite taking up space on your captain selection screen - get in touch, we can help you remove them.
+<h5>The following Stream Raiders captains have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by allowing, supporting, promoting, encouraging or spreading harassment in their communities. Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual.</h5>
 
-### Thanks to all players who report harassment incidents (including factual evidence) to us directly, helping keeping this list up-to-date!
-###### All evidence is double-checked against VODs. If the captain has VODs disabled or paywalled the evidence is assumed valid until proven otherwise.
+<h6>The harassment will doubtfully stop spreading faster than COVID19 until CTV start to actually enforce their own Guidelines. In other words, never.</h6>
 
-> [[2 July, 2022]](https://discord.com/channels/500415557800296449/500415558257344514/992978656152535090){:target="_blank"}{:rel="noopener noreferrer"} ctv_kermond: ... calling out specific Captains is a specific no-no - you can use the Reporting function for that!
+<strong>P.S.</strong> If you got banned by one of these captains while they were in your favorites and now you have a blank favorite taking up space on your captain selection screen - get in touch, we can help you remove them without waiting an eternity for a reply from support and without using any 3rd party applications.
 
-##### But calling out specific Players is a specific yes-yes, apparently. It is common knowledge that all reports are ignored. You might as well toss a coin into a wishing well for a better effect.
+<h3>Thanks to all players who report harassment incidents (including factual evidence) to us directly, helping keeping this list up-to-date!</h3>
+<h6>All evidence is double-checked against VODs. If the captain has VODs disabled or paywalled the evidence is assumed valid until proven otherwise.</h6>
+
+<blockquote><p><a href="https://discord.com/channels/500415557800296449/500415558257344514/992978656152535090" target="_blank" rel="noopener noreferrer">[2 July, 2022]</a> ctv_kermond: ... calling out specific Captains is a specific no-no - you can use the Reporting function for that!</p></blockquote>
+
+<h5>But calling out specific Players is a specific yes-yes, apparently. It is common knowledge that all reports are ignored. You might as well toss a coin into a wishing well for a better effect.</h5>
+
+</div>
+<div style="flex: 0 25%">
 
 {% if site.data.names and site.data.violators %}
 
@@ -37,7 +44,7 @@ permalink: /violators/
     </tr>
   </thead>
 {% tablerow violator in allviolators cols:1 %}
-  <a href="https://www.streamraiders.com/report/" target="_blank" rel="noopener noreferrer">{{ violator }}</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Harassment&entry.1613546988={{ violator }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ violator }}</a>
 {% endtablerow %}
 </table>
 
@@ -50,7 +57,7 @@ $(document).ready( function () {
     "info": false,
     "lengthChange": false,
     "ordering": false,
-    "pageLength": 5,
+    "pageLength": 4,
     "pagingType": "full"
   });
 } );
@@ -61,9 +68,10 @@ $(document).ready( function () {
     min-width: 0.2em !important;
     padding:.1em .1em !important;
   }
-  .dataTables_wrapper {
-    width: 25%;
-  }
 </style>
 
 {% endif %}
+
+<h6>KMTlol complained about having to scroll 5 at a time, so here you go :hugs: Use the Search, Luke! Ratings page (including the free advertisement you mentioned) is the main point of this website anyway :stuck_out_tongue:</h6>
+
+</div>

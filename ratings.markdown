@@ -5,10 +5,8 @@ title: Ratings
 permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
-###### P.S. If you are as blind as Hooks, you can hover over some column headers for an explanation.
-###### You can sort the table by clicking said column headers or even search for specific captains using the Search box.
 
-# Captains promoting this website to their community during an event will get a shoutout here for the duration of the next event.
+###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"} are obviously not eligible.
 
 {%- assign today = site.time | date: '%s' -%}
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
@@ -44,6 +42,8 @@ permalink: /ratings/
   {%- endfor %}
 </table>
 
+###### Unable to find the captain you are looking for? Check that they are not a [Violator]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"}
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
@@ -51,6 +51,7 @@ $(document).ready( function () {
   $('#ratings-table').DataTable({
     "paging": false,
     "scrollY": 300,
+    "scrollCollapse": true,
     "info": false,
     "deferRender": false,
     "order": [[ 2, "desc" ], [ 1, "asc" ], [ 3, "desc" ], [ 4, "desc"]]
