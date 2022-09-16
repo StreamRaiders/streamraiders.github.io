@@ -7,7 +7,7 @@ permalink: /violators/
 <div style="display: flex">
 <div style="flex: 1">
 
-<h5>The following Stream Raiders captains have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by allowing, supporting, promoting, encouraging or spreading harassment in their communities. Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual.</h5>
+<h5>The following Stream Raiders captains have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by allowing, supporting, promoting, encouraging or spreading harassment in their communities. It is perfectly fine to ban players from your battles, but it is a violation of Guidelines (i.e., harassment) to call them <em>names</em>. Of course, most of them would deny any such activity. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual or lacking any rhyme or reason.</h5>
 
 <h6>The harassment will doubtfully stop spreading faster than COVID19 until CTV start to actually enforce their own Guidelines. In other words, never.</h6>
 
@@ -53,12 +53,11 @@ permalink: /violators/
 <script type="text/javascript">
 $(document).ready( function () {
   $('#violators-table').DataTable({
-    "paging": true,
+    "paging": false,
     "info": false,
-    "lengthChange": false,
     "ordering": false,
-    "pageLength": 4,
-    "pagingType": "full"
+    "scrollY": 450,
+    "scrollCollapse": true
   });
 } );
 </script>
@@ -71,7 +70,5 @@ $(document).ready( function () {
 </style>
 
 {% endif %}
-
-<h6>KMTlol complained about having to scroll 5 at a time, so here you go :hugs: Use the Search, Luke! Ratings page (including the free advertisement you mentioned) is the main point of this website anyway :stuck_out_tongue:</h6>
 
 </div>
