@@ -1,7 +1,7 @@
 ---
 layout: page
-#default-jekyll-theme-midnight
 title: Ratings
+description: How reliable are Stream Raiders captains at running their battles on time?
 permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
@@ -37,7 +37,7 @@ permalink: /ratings/
       {%- assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 -%}
       {%- assign effective2 = rating | plus: battlesPerDay | round: 2 -%}
     {%- endcomment-%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" rel="noopener noreferrer">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
+    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" rel="noopener noreferrer">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>

@@ -1,18 +1,18 @@
 ---
 layout: page
-#default-jekyll-theme-midnight
 title: Botters
+description: Stream Raiders bots operators
 permalink: /botters/
 ---
 <div style="display: flex">
 <div style="flex: 1">
 
-<h5>(Not really in the theme of the website, but still...) The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner (their bot accounts are not disclosed here). They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to distract the streamer from their own bot accounts and get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</h5>
+<p>(Not really in the theme of the website, but still...) The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner (their bot accounts are not disclosed here). They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
 
-<h3>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</h3>
+<p style="font-size:larger"><b>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p>
 
-<h6><strong>How to detect bot accounts:</strong> Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</h6>
-<h6>Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge or even straight up name shaming.</h6>
+<p><strong>How to detect bot accounts:</strong> Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
+<p style="font-size:smaller">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge or even straight up name shaming.</p>
 
 </div>
 <div style="flex: 0 25%">
@@ -40,7 +40,7 @@ $(document).ready( function () {
     "info": false,
     "paging": false,
     "ordering": false,
-    "scrollY": 275,
+    "scrollY": 325,
     "scrollCollapse": true
   });
 } );
