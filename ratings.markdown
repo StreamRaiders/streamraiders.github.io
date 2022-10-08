@@ -18,7 +18,6 @@ permalink: /ratings/
   <thead>
     <tr>
       <th>Captain</th>
-      <th>Battles<br />on record</th>
       <th title="Each action performed with over 5 minutes delay is a -1 rating. Each perfectly completed battle is a +0.01 rating.">Reliability<br/>rating</th>
       <th title="Higher rating means faster event tiers!">Effective<br/>rating</th>
       <th>Efficiency</th>
@@ -30,14 +29,9 @@ permalink: /ratings/
   {% unless site.data.violators contains my_key or battles < daysSince %}
   <tr>
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
-    {%- assign effective3 = entry[1].c | minus: entry[1].l | times: 1.0 | divided_by: daysSince | round: 2 -%}
+    {%- assign effective = entry[1].c | minus: entry[1].l | times: 1.0 | divided_by: daysSince | round: 2 -%}
     {%- assign efficiency = entry[1].c | times: 100.0 | divided_by: battles | round: 2 -%}
-    {%- comment-%}
-      {%- assign battlesPerDay = battles | times: 1.0 | divided_by: daysSince -%}
-      {%- assign effective1 = rating | times: 100.0 | divided_by: daysSince | round: 2 -%}
-      {%- assign effective2 = rating | plus: battlesPerDay | round: 2 -%}
-    {%- endcomment-%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" rel="noopener noreferrer">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ battles }}</td><td>{{ rating }}</td><td>{{ effective3 }}</td><td>{{ efficiency }}%</td></tr>
+    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" rel="noopener noreferrer" title="Battles on record: {{ battles }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ rating }}</td><td>{{ effective }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>
@@ -54,7 +48,9 @@ $(document).ready( function () {
     "scrollCollapse": true,
     "info": false,
     "deferRender": false,
-    "order": [[ 2, "desc" ], [ 1, "asc" ], [ 3, "desc" ], [ 4, "desc"]]
+    "autoWidth": false,
+    "order": [[ 1, "desc" ], [ 2, "desc" ], [ 3, "desc"]],
+    "columnDefs": [{"width": "50px", "searchable": false, "orderSequence": [ "desc", "asc" ], "targets": [ -1, -2, -3 ]}]
   });
 } );
 </script>
