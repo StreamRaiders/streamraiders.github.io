@@ -7,15 +7,18 @@ permalink: /botters/
 <div style="display: flex">
 <div style="flex: 1">
 
-<p>(Not really in the theme of the website, but still...) The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner (their bot accounts are not disclosed here). They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
+<p>The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner. They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
 
 <p style="font-size:larger"><b>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p>
 
 <p><strong>How to detect bot accounts:</strong> Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
-<p style="font-size:smaller">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge or even straight up name shaming, thereby harassing the players, <a href="/violators/" target="_blank" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
+<p style="font-size:smaller">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge (i.e., suffering from the <a href="https://en.wikipedia.org/wiki/Dunning-Kruger_effect" target="_blank" rel="noopener noreferrer">Dunning–Kruger effect</a>) or even straight up name shaming, thereby harassing the players, <a href="/violators/" target="_blank" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
 
 </div>
-<div style="flex: 0 25%">
+<input class="tab-shifter" id="tab-shifter" type="checkbox" style="opacity: 0; position: absolute; right: 0px; top:25%;"  />
+<label for="tab-shifter" style="position: absolute; right: 0px; top:25%; z-index:1; cursor: pointer; font-size: smaller; text-align: center; writing-mode: vertical-lr; user-select: none;">Bot accounts</label>
+<div class="shifter" style="flex: 0 30%; position: relative; overflow: hidden">
+<div class="main-content" style="width: 100%">
 
 {% if site.data.botters %}
 
@@ -32,19 +35,51 @@ permalink: /botters/
 {% endtablerow %}
 </table>
 
+{% endif %}
+
+</div>
+<div class="overlay-content" style="position: absolute; z-index: 1; transition: 0.6s; top: 0%; left: 100%; background: #fff; width: 100%">
+
+<p style="font-size:x-small">We offered CTV advanced bot detection tools but instead got counteroffered with a read-only access to the players database without any NDA restrictions under the premise that they could not care less about enforcing the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> at the moment.</p>
+<p style="font-size:x-small">Below is a sample of confirmed bot accounts. These aren't even trying to behave like humans. If you see your name here you should request a refund from your bot's lousy developer.</p>
+
+{% if site.data.bots %}
+
+<table id="bots-table">
+  <thead>
+    <tr>
+      <th>Username</th>
+    </tr>
+  </thead>
+{% tablerow bot in site.data.bots cols:1 %}
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
+{% endtablerow %}
+</table>
+
+{% endif %}
+
+</div>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
-$(document).ready( function () {
-  $('#botters-table').DataTable({
-    "info": false,
-    "paging": false,
-    "ordering": false,
-    "scrollY": 325,
-    "scrollCollapse": true
-  });
-} );
+  (function() {
+    let table1 = new DataTable('#botters-table', {
+        "info": false,
+        "paging": false,
+        "ordering": false,
+        "scrollY": 350,
+        "scrollCollapse": true
+    });
+    let table2 = new DataTable('#bots-table', {
+        "info": false,
+        "paging": false,
+        "scrollY": 215,
+        "orderFixed": [ 0, 'asc' ]
+    });
+  })();
 </script>
+
 <style>
   .dataTables_wrapper .dataTables_paginate .paginate_button
   {
@@ -52,8 +87,6 @@ $(document).ready( function () {
     padding:.1em .1em !important;
   }
 </style>
-
-{% endif %}
 
 </div>
 </div>
