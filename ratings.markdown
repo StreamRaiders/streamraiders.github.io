@@ -6,7 +6,7 @@ permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
 
-##### Nearly **800** players have used this table to improve their game enjoyment during the last event alone!
+##### Over **1500** players have used this table to improve their game enjoyment during the last event alone!
 
 ###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"} are obviously not eligible.
 
@@ -20,7 +20,7 @@ permalink: /ratings/
   <thead>
     <tr>
       <th>Captain</th>
-      <th title="Each action performed with over 5 minutes delay is a -1 rating. Each perfectly completed battle is a +0.01 rating.">Reliability<br/>rating</th>
+      <th title="Each action (starting the battle after 'Battle is ready' or granting the rewards after the battle is finished) performed with over 5 minutes delay is a -1 rating. Each perfectly completed battle is a +0.01 rating.">Reliability<br/>rating</th>
       <th title="Higher rating means faster event tiers!">Effective<br/>rating</th>
       <th>Efficiency</th>
     </tr>

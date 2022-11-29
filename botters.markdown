@@ -1,26 +1,43 @@
 ---
 layout: page
 title: Botters
-description: Stream Raiders bots operators
+description: Stream Raiders bots and their operators
 permalink: /botters/
 ---
+<style>
+  details {
+    border: solid 1px gray;
+    padding-left: 10px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    user-select: none;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button
+  {
+    min-width: 0.2em !important;
+    padding:.1em .1em !important;
+  }
+</style>
+
 <div style="display: flex">
 <div style="flex: 1">
 
 <p>The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner. They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
 
-<details style="border: solid 1px gray; padding-left: 10px; border-radius: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; user-select: none;">
+<details>
 	<summary>Example lies</summary>
-	<details style="border: solid 1px gray; padding-left: 10px; border-radius: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; user-select: none;">
+	<details>
 		<summary>Tzepiboo</summary>
 		<p style="font-size:smaller">In Treecle's channel on 25/09/2022:</p><blockquote>Yeah the bots like to inflate treecle's enemy count and then abandon her for loyalty chests</blockquote>
 		<p style="font-size:smaller">Later in ShanChan's channel on 24/10/2022:</p><blockquote>They even had the nerve to claim I have extensive knowledge of botting and brag about it, which I don't</blockquote>
 	</details>
 </details>
 
-<p style="font-size:larger"><b>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p>
+<!-- <p style="font-size:larger"><b>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p> -->
 
-<details style="border: solid 1px gray; padding-left: 10px; border-radius: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; user-select: none;">
+<details>
 	<summary>How to detect bot accounts</summary>
 	<p>Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
 	<p style="font-size:smaller">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge (i.e., suffering from the <a href="https://en.wikipedia.org/wiki/Dunning-Kruger_effect" target="_blank" rel="noopener noreferrer">Dunning–Kruger effect</a>) or even straight up name shaming, thereby harassing the players, <a href="/violators/" target="_blank" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
@@ -91,14 +108,6 @@ permalink: /botters/
     });
   })();
 </script>
-
-<style>
-  .dataTables_wrapper .dataTables_paginate .paginate_button
-  {
-    min-width: 0.2em !important;
-    padding:.1em .1em !important;
-  }
-</style>
 
 </div>
 </div>
