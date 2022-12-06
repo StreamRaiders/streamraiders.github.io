@@ -29,7 +29,7 @@ permalink: /violators/
 To all the captains that assume people are bots and state "If you are not - please say so in chat":
 <blockquote><p>AmicuNoa: ...creating an unpleasant situation by forcing an unwanted contact ... is harassment</p></blockquote>
 
-<p>The harassment will doubtfully stop spreading faster than COVID19 until CTV start to actually enforce their own Guidelines. In other words, never.</p>
+<p>Recently CTV "claimed" to uphold the community guidelines (<a href="https://www.twitch.tv/videos/1666884105" target="_blank" rel="noopener noreferrer">CTV DEV AMA</a>) but only mentioned botting specifically, without any word on harassment. The harassment will doubtfully stop spreading faster than COVID19 until CTV start to actually enforce their own Guidelines. In other words, never. Oh, I'm sorry, rules and guidelines do not apply to people generating income for you? My bad...</p>
 
 <!-- <p><strong>P.S.</strong> If you got banned by one of these captains while they were in your favorites and now you have a blank favorite taking up space on your captain selection screen - get in touch, we can help you remove them without waiting an eternity for a reply from support and without using any 3rd party applications.</p> -->
 
