@@ -6,15 +6,15 @@ permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
 
-##### Over **1500** players have used this table to improve their game enjoyment during the last event alone!
+##### Over **1700** players have used this table to improve their game enjoyment during the last event alone!
 
 ###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"} are obviously not eligible.
 
-{%- assign today = site.time | date: '%s' -%}
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
-{%- assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 -%}
+{%- assign daysSince = 'today' | date: '%s' | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 -%}
 
 {% if site.data.lames and site.data.names and site.data.violators %}
+{%- assign totalShown = 0 %}
 
 <table id="ratings-table">
   <thead>
@@ -29,14 +29,16 @@ permalink: /ratings/
   {%- assign my_key = entry[0] | string -%}
   {%- assign battles = entry[1].c | plus: entry[1].l -%}
   {% unless site.data.violators contains my_key or battles < daysSince %}
+  {%- assign totalShown = totalShown | plus:1 %}
   <tr>
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
     {%- assign effective = entry[1].c | minus: entry[1].l | times: 1.0 | divided_by: daysSince | round: 2 -%}
     {%- assign efficiency = entry[1].c | times: 100.0 | divided_by: battles | round: 2 -%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" rel="noopener noreferrer" title="Battles on record: {{ battles }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ rating }}</td><td>{{ effective }}</td><td>{{ efficiency }}%</td></tr>
+    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" title="Battles on record: {{ battles }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ rating }}</td><td>{{ effective }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>
+<!--{{daysSince}}>{{totalShown}}/{{site.data.lames.size}}-->
 
 ###### Unable to find the captain you are looking for? Check that they are not a [Violator]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"}
 

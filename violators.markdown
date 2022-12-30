@@ -60,6 +60,7 @@ To all the captains that assume people are bots and state "If you are not - plea
 	</details>
 	<details>
 		<summary style="font-size:smaller">You are clearly a bot if you are not a viewer/follower of my channel</summary>
+		<p style="font-size:smaller">In XombieMagic's channel on 15/12/2022:</p><blockquote>neahchanart: U can check if the ppl in Streamraiders are in your stream rn. If the majority is not: then they are bots.</blockquote>
 		<p style="font-size:smaller">Surprisingly the game does not require chat participation or even having twitch open to play the game, completelly self-contained.</p>
 	</details>
 	<details>
@@ -117,7 +118,7 @@ To all the captains that assume people are bots and state "If you are not - plea
 
 {% if site.data.names and site.data.violators %}
 
-{% for violator in site.data.violators %}
+{%- for violator in site.data.violators -%}
   {%- assign my_key = violator | string -%}
   {% if site.data.names contains my_key %}
     {%- assign name = site.data.names[my_key] -%}
@@ -125,9 +126,9 @@ To all the captains that assume people are bots and state "If you are not - plea
     {%- assign name = "MISSING NAME, SORRY(" | append: my_key | append: ")" -%}
   {% endif %}
   {% capture tmp %}{{ tmp }}#{{ name }}{% endcapture %}
-{% endfor %}
+{%- endfor -%}
 
-{% assign allviolators = tmp | remove_first: '#' | split: '#' | sort_natural %}
+{%- assign allviolators = tmp | remove_first: '#' | split: '#' | sort_natural -%}
 
 <table id="violators-table">
   <thead>
@@ -135,9 +136,9 @@ To all the captains that assume people are bots and state "If you are not - plea
       <th>Captain</th>
     </tr>
   </thead>
-{% tablerow violator in allviolators cols:1 %}
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Harassment&entry.1613546988={{ violator }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ violator }}</a>
-{% endtablerow %}
+{%- for violator in allviolators %}
+  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Harassment&entry.1613546988={{ violator }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ violator }}</a></td></tr>
+{%- endfor %}
 </table>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

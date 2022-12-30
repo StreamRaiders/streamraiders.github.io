@@ -49,30 +49,27 @@ permalink: /botters/
 <div class="shifter" style="flex: 0 30%; position: relative; overflow: hidden">
 <div class="main-content" style="width: 100%">
 
-{% if site.data.botters %}
-
+{%- if site.data.botters -%}
 {% assign allbotters = site.data.botters | sort_natural %}
-
 <table id="botters-table">
   <thead>
     <tr>
       <th>Username</th>
     </tr>
   </thead>
-{% tablerow botter in allbotters cols:1 %}
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ botter }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ botter }}</a>
-{% endtablerow %}
+{%- for botter in allbotters %}
+  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ botter }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ botter }}</a></td></tr>
+{%- endfor %}
 </table>
 
-{% endif %}
-
+{%- endif %}
 </div>
 <div class="overlay-content" style="position: absolute; z-index: 1; transition: 0.6s; top: 0%; left: 100%; background: #fff; width: 100%">
 
 <p style="font-size:x-small">We offered CTV advanced bot detection tools but instead got counteroffered with a read-only access to the players database without any NDA restrictions under the premise that they could not care less about enforcing the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> at the moment.</p>
 <p style="font-size:x-small">Below is a sample of confirmed bot accounts. These aren't even trying to behave like humans. If you see your name here you should request a refund from your bot's lousy developer.</p>
 
-{% if site.data.bots %}
+{% if site.data.bots -%}
 
 <table id="bots-table">
   <thead>
@@ -80,13 +77,26 @@ permalink: /botters/
       <th>Username</th>
     </tr>
   </thead>
-{% tablerow bot in site.data.bots cols:1 %}
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
-{% endtablerow %}
+{%- assign totalShown = 0 -%}
+{%- assign cutoffTS = 'today' | date:'%s' | minus:3456000 -%}
+{%- for bot in site.data.bots -%}
+  {%- assign shouldShow = false -%}
+  {%- for entry in bot[1].activity -%}
+    {%- assign myTS = entry[1] | date:'%s' | plus:0 -%}
+    {%- if myTS > cutoffTS -%}
+      {%- assign shouldShow = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if shouldShow %}
+  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
+    {%- assign totalShown = totalShown | plus:1 -%}
+</td></tr>
+  {%- endif -%}
+{%- endfor %}
 </table>
+<!--{{totalShown}}-->
 
-{% endif %}
-
+{%- endif %}
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
