@@ -28,7 +28,7 @@ permalink: /violators/
 <p>If you doubt any entry in the list and would like to have a civilized conversation instead of resorting to pointless personal attacks demonstrating your own upbringing like <a href="https://discord.com/channels/500415557800296449/986322657672843274/1061090143144005663" target="_blank" rel="noopener noreferrer">that guy</a>, please reach out to us through the usual means.<!-- , we'll provide the date(s) of infractions on request, limited to violations over 2 events ago and only <b>1</b> clue per event (so choose wisely). Such limits are in place to protect the privacy and avoid cyberbullying of players who were offended and reported the violation.--></p>
 
 To all the captains that assume people are bots and state "If you are not - please say so in chat":
-<blockquote><p>AmicuNoa: ...creating an unpleasant situation by forcing an unwanted contact ... is harassment</p></blockquote>
+<blockquote>AmicuNoa: ...creating an unpleasant situation by forcing an unwanted contact ... is harassment</blockquote>
 
 
 <p>Recently CTV "claimed" to uphold the community guidelines (<a href="https://www.twitch.tv/videos/1666884105" target="_blank" rel="noopener noreferrer">CTV DEV AMA</a>) but only mentioned botting specifically, without any word on harassment. Furthermore, they permit <a href="https://discord.com/channels/500415557800296449/500415558257344514/1057722799642390649" target="_blank" rel="noopener noreferrer">members of the "elite stream team"</a> to promote harassment with their lack of understanding how the game mechanics (particualrly event limits for loyalty chests) work. The harassment will doubtfully stop spreading faster than COVID19 until CTV start to actually enforce their own Guidelines. In other words, never. Oh, I'm sorry, rules and guidelines do not apply to people generating income for you? My bad...</p>
@@ -108,12 +108,14 @@ To all the captains that assume people are bots and state "If you are not - plea
 		<summary style="font-size:smaller">You are a bot because you don't have a profile picture/filled out profile page</summary>
 		<p style="font-size:smaller">Why would people who don't intend to be streaming spend any effort on such things?</p>
 	</details>
-		You are a bot because you didn't cash in units for souls as soon as they hit lvl 30
-		iPCM in SwayJEDI's channel: It's easy to tell bots from Humans, because the Bots don't cash in unit souls when they hit Lv30. Because trust me, no human would ever *not* cash in a Vampire or Saint soul. Saint Soul gives a unit a Personal 75% Ranged Damage Resist.
-		1. Vampire and Saint souls don't exist in the game yet.
-		2. You have a limited number of Soulvessels.
-		3. You can have 99 duplicates of each unit type.
-		tl;dr: Accusations with complete lack of game knowledge, aka harassment.
+	<details>
+		<summary style="font-size:smaller">You are a bot because you didn't cash in units for souls as soon as they hit lvl 30</summary>
+		<p style="font-size:smaller">iPCM in SwayJEDI's channel:</p><blockquote>It's easy to tell bots from Humans, because the Bots don't cash in unit souls when they hit Lv30. Because trust me, no human would ever *not* cash in a Vampire or Saint soul. Saint Soul gives a unit a Personal 75% Ranged Damage Resist.</blockquote>
+		<p style="font-size:smaller">1. Vampire and Saint souls don't exist in the game yet.</p>
+		<p style="font-size:smaller">2. You have a limited number of Soulvessels.</p>
+		<p style="font-size:smaller">3. You can have 99 duplicates of each unit type.</p>
+		<p style="font-size:smaller">tl;dr: Accusations with complete lack of game knowledge, aka harassment.</p>
+	</details>
 </details>
 
 <p>All these harassing captains are a nuisance and should be banned. Their typical behavior is to offend (often kicked off by members of their chat) new players placing in their battles, get excited about more rewards after the battles, immediately decide to avoid granting rewards to these players, get very surprised when they leave never to return causing battle rewards number to dwindle. Yet they don't bother to appologize for the harassment.</p>
