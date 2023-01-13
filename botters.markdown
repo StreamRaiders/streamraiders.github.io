@@ -82,9 +82,23 @@ permalink: /botters/
 {%- for bot in site.data.bots -%}
   {%- assign shouldShow = false -%}
   {%- for entry in bot[1].activity -%}
-    {%- assign myTS = entry[1] | date:'%s' | plus:0 -%}
-    {%- if myTS > cutoffTS -%}
-      {%- assign shouldShow = true -%}
+    {%- assign activityStart = entry[0] | date:'%s' | plus:0 -%}
+    {%- assign activityEnd = entry[1] | date:'%s' | plus:0 -%}
+    {%- comment -%}
+    Workarounds for recorded intervals of 7 or more days
+    {%- endcomment -%}
+    {%- if activityStart >= 1658440800 and activityStart <= 1659045600 and activityEnd >= 1658440800 and activityEnd <= 1659045600 -%}
+    {%- elsif activityStart >= 1660860000 and activityStart <= 1661464800 and activityEnd >= 1660860000 and activityEnd <= 1661464800 -%}
+    {%- elsif activityStart >= 1662069600 and activityStart <= 1662674400 and activityEnd >= 1662069600 and activityEnd <= 1662674400 -%}
+    {%- elsif activityStart >= 1665698400 and activityStart <= 1666303200 and activityEnd >= 1665698400 and activityEnd <= 1666303200 -%}
+    {%- elsif activityStart >= 1666908000 and activityStart <= 1667516400 and activityEnd >= 1666908000 and activityEnd <= 1667516400 -%}
+    {%- elsif activityStart >= 1667516400 and activityStart <= 1668121200 and activityEnd >= 1667516400 and activityEnd <= 1668121200 -%}
+    {%- elsif activityStart >= 1668726000 and activityStart <= 1669330800 and activityEnd >= 1668726000 and activityEnd <= 1669330800 -%}
+    {%- elsif activityStart >= 1671663600 and activityStart <= 1672959600 and activityEnd >= 1671663600 and activityEnd <= 1672959600 -%}
+    {%- else -%}
+      {%- if activityEnd > cutoffTS -%}
+        {%- assign shouldShow = true -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
   {%- if shouldShow %}
