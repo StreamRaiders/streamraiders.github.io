@@ -31,7 +31,15 @@ permalink: /botters/
 	<details>
 		<summary>Tzepiboo</summary>
 		<p style="font-size:smaller">In Treecle's channel on 25/09/2022:</p><blockquote>Yeah the bots like to inflate treecle's enemy count and then abandon her for loyalty chests</blockquote>
-		<p style="font-size:smaller">Later in ShanChan's channel on 24/10/2022:</p><blockquote>They even had the nerve to claim I have extensive knowledge of botting and brag about it, which I don't</blockquote>
+		<p style="font-size:smaller">In ShanChan's channel on 24/10/2022:</p><blockquote>They even had the nerve to claim I have extensive knowledge of botting and brag about it, which I don't</blockquote>
+	</details>
+	<details>
+		<summary>L0ne_Hermit</summary>
+    <p style="font-size:smaller">In byeol_rl's channel on 17/07/2022:</p><blockquote>Omg why the bots came after i placed my unit :rofl:</blockquote>
+    <p style="font-size:smaller">In Teddiosg's channel on 19/07/2022:</p><blockquote>The bot problem</blockquote>
+    <p style="font-size:smaller">In xsubcube's channel on 28/07/2022:</p><blockquote>i think the botter is here also</blockquote>
+    <p style="font-size:smaller">In byeol_rl's channel on 30/07/2022:</p><blockquote>wah these bot armies</blockquote>
+    <p style="font-size:smaller">In Teddiosg's channel on 03/02/2023:</p><blockquote>i still dunno why i was in the botter list</blockquote>
 	</details>
 </details>
 
@@ -88,13 +96,23 @@ permalink: /botters/
     Workarounds for recorded intervals of 7 or more days
     {%- endcomment -%}
     {%- if activityStart >= 1658440800 and activityStart <= 1659045600 and activityEnd >= 1658440800 and activityEnd <= 1659045600 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1660860000 and activityStart <= 1661464800 and activityEnd >= 1660860000 and activityEnd <= 1661464800 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1662069600 and activityStart <= 1662674400 and activityEnd >= 1662069600 and activityEnd <= 1662674400 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1665698400 and activityStart <= 1666303200 and activityEnd >= 1665698400 and activityEnd <= 1666303200 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1666908000 and activityStart <= 1667516400 and activityEnd >= 1666908000 and activityEnd <= 1667516400 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1667516400 and activityStart <= 1668121200 and activityEnd >= 1667516400 and activityEnd <= 1668121200 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1668726000 and activityStart <= 1669330800 and activityEnd >= 1668726000 and activityEnd <= 1669330800 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1671663600 and activityStart <= 1672959600 and activityEnd >= 1671663600 and activityEnd <= 1672959600 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
+    {%- elsif activityStart >= 1674774000 and activityStart <= 1675378800 and activityEnd >= 1674774000 and activityEnd <= 1675378800 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- else -%}
       {%- if activityEnd > cutoffTS -%}
         {%- assign shouldShow = true -%}

@@ -6,7 +6,7 @@ permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
 
-##### Over **1700** players have used this table to improve their game enjoyment during the last event alone!
+##### Over **1800** players have used this table to improve their game enjoyment during the last event alone!
 
 ###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"} are obviously not eligible.
 
