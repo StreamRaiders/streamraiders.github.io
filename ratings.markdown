@@ -6,9 +6,11 @@ permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
 
-##### Over **1800** players have used this table to improve their game enjoyment during the last event alone!
+##### Over **1900** players have used this table to improve their game enjoyment during the last event alone!
 
-###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"} are obviously not eligible.
+### Honorary *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:
+
+{%- comment -%}###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:rel="noopener noreferrer"} are obviously not eligible.{%- endcomment -%}
 
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
 {%- assign daysSince = 'today' | date: '%s' | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 -%}
@@ -40,7 +42,13 @@ permalink: /ratings/
 </table>
 <!--{{daysSince}}>{{totalShown}}/{{site.data.lames.size}}-->
 
-###### Unable to find the captain you are looking for? Check that they are not a [Violator]({%link violators.markdown%}){:target="_blank"}{:rel="noopener noreferrer"}
+<style>
+  h6 {
+    margin-top: 5pt;
+  }
+</style>
+
+###### Unable to find the captain you are looking for? Check that they are not a [Violator]({%link violators.markdown%}){:rel="noopener noreferrer"}
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>

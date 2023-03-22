@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Botters
+exclude: true
 description: Stream Raiders bots and their operators
 permalink: /botters/
 ---
@@ -13,6 +14,7 @@ permalink: /botters/
     padding-top: 5px;
     padding-bottom: 5px;
     user-select: none;
+    text-align: initial;
   }
   .dataTables_wrapper .dataTables_paginate .paginate_button
   {
@@ -21,10 +23,10 @@ permalink: /botters/
   }
 </style>
 
-<div style="display: flex">
-<div style="flex: 1">
+<div style="display:flex">
+<div style="flex:1; margin-right:10pt">
 
-<p>The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner. They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
+<p style="text-align:justify">The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner. They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
 
 <details>
 	<summary>Example lies</summary>
@@ -45,17 +47,15 @@ permalink: /botters/
 
 <!-- <p style="font-size:larger"><b>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p> -->
 
-<details>
-	<summary>How to detect bot accounts</summary>
-	<p>Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
-	<p style="font-size:smaller">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge (i.e., suffering from the <a href="https://en.wikipedia.org/wiki/Dunning-Kruger_effect" target="_blank" rel="noopener noreferrer">Dunning–Kruger effect</a>) or even straight up name shaming, thereby harassing the players, <a href="/violators/" target="_blank" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
-</details>
+<h3 style="text-align:center; margin-top:15pt">How to detect bot accounts</h3>
+<p style="text-align:justify">Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
+<p style="font-size:smaller; text-align:justify">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge (i.e., suffering from the <a href="https://en.wikipedia.org/wiki/Dunning-Kruger_effect" target="_blank" rel="noopener noreferrer">Dunning–Kruger effect</a>) or even straight up name shaming, thereby harassing the players, <a href="/violators/" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
 
 </div>
-<input class="tab-shifter" id="tab-shifter" type="checkbox" style="opacity: 0; position: absolute; right: 0px; top:25%;"  />
-<label for="tab-shifter" style="position: absolute; right: 0px; top:25%; z-index:1; cursor: pointer; font-size: smaller; text-align: center; writing-mode: vertical-lr; user-select: none;">Bot accounts</label>
-<div class="shifter" style="flex: 0 30%; position: relative; overflow: hidden">
-<div class="main-content" style="width: 100%">
+<input class="tab-shifter" id="tab-shifter" type="checkbox" style="opacity:0; position:absolute; right:0px; top:25%;"  />
+<label for="tab-shifter" style="position:absolute; right:0px; top:25%; z-index:1; cursor:pointer; font-size:smaller; text-align:center; writing-mode:vertical-lr; user-select:none;">Bot accounts</label>
+<div class="shifter" style="flex:0 30%; position:relative; overflow:hidden">
+<div class="main-content" style="width:100%">
 
 {%- if site.data.botters -%}
 {% assign allbotters = site.data.botters | sort_natural %}
@@ -72,10 +72,10 @@ permalink: /botters/
 
 {%- endif %}
 </div>
-<div class="overlay-content" style="position: absolute; z-index: 1; transition: 0.6s; top: 0%; left: 100%; background: #fff; width: 100%">
+<div class="overlay-content" style="position:absolute; z-index:1; transition:0.6s; top:0%; left:100%; background:#fff; width:100%">
 
-<p style="font-size:x-small">We offered CTV advanced bot detection tools but instead got counteroffered with a read-only access to the players database without any NDA restrictions under the premise that they could not care less about enforcing the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> at the moment.</p>
-<p style="font-size:x-small">Below is a sample of confirmed bot accounts. These aren't even trying to behave like humans. If you see your name here you should request a refund from your bot's lousy developer.</p>
+<p style="font-size:x-small; text-align:justify">We offered CTV advanced bot detection tools but instead got counteroffered with a read-only access to the players database without any NDA restrictions under the premise that they could not care less about enforcing the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> at the moment.</p>
+<p style="font-size:x-small; text-align:justify">Below is a sample of confirmed bot accounts. These aren't even trying to behave like humans. If you see your name here you should request a refund from your bot's lousy developer.</p>
 
 {% if site.data.bots -%}
 

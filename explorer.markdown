@@ -38,7 +38,7 @@ function parseData(dictdata, version, serverTime) {
 	information.innerText = "Version: " + version + " Server time: " + serverTime;
 	target.appendChild(information);
 	const postscript = document.createElement("p");
-	postscript.innerText = "P.S.: Ctrl+F works best in Chromium-based browsers.";
+	postscript.innerHTML = "P.S.: Ctrl+F works best in Chromium-based browsers.<br/>Changes omitted from the published patch notes:<ul><li><b>0.52.0/0.213.0</b>: Removed 'Total participants' number from the captain information during search so that players will not be able to tell, which captain is small or large.</li></ul>";
 	target.appendChild(postscript);
 	Object.entries(dictdata).forEach(entry => {
 		const details = document.createElement("details");
