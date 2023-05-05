@@ -2,7 +2,7 @@
 layout: page
 title: Botters
 exclude: true
-description: Stream Raiders bots and their operators
+description: Streamraiders Stream Raiders bots
 permalink: /botters/
 ---
 <style>
@@ -113,6 +113,8 @@ permalink: /botters/
       <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- elsif activityStart >= 1674774000 and activityStart <= 1675378800 and activityEnd >= 1674774000 and activityEnd <= 1675378800 -%}
       <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
+    {%- elsif activityStart >= 1679526000 and activityStart <= 1680213600 and activityEnd >= 1679526000 and activityEnd <= 1680213600 -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }}-->
     {%- else -%}
       {%- if activityEnd > cutoffTS -%}
         {%- assign shouldShow = true -%}
@@ -120,7 +122,7 @@ permalink: /botters/
     {%- endif -%}
   {%- endfor -%}
   {%- if shouldShow %}
-  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
+  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-&entry.354761549=continue" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
     {%- assign totalShown = totalShown | plus:1 -%}
 </td></tr>
   {%- endif -%}

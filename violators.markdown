@@ -2,7 +2,7 @@
 layout: page
 title: Violators
 exclude: true
-description: Stream Raiders captains that violate the Guidelines by harassing the players
+description: Worst Streamraiders Stream Raiders captains violators
 permalink: /violators/
 ---
 <style>
@@ -29,27 +29,29 @@ permalink: /violators/
 <p>The following Stream Raiders captains have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by allowing, supporting, promoting, encouraging or spreading harassment in their communities. <b>All evidence is double-checked against VODs at the time of reporting. If the captain has VODs disabled or paywalled the evidence is assumed valid until proven otherwise.</b> Anyone claiming the list to be made up is clearly turning a blind eye to the evidence or not being honest enough to admit their own previous actions or statements. Sometimes even going as far as stating the opposite and claiming it's not based on anything factual or lacking any rhyme or reason.</p>
 <p>If you doubt any entry in the list and would like to have a civilized conversation instead of resorting to pointless personal attacks demonstrating your own upbringing like <a href="https://discord.com/channels/500415557800296449/986322657672843274/1061090143144005663" target="_blank" rel="noopener noreferrer">that guy</a>, please reach out to us through the usual means.<!-- , we'll provide the date(s) of infractions on request, limited to violations over 2 events ago and only <b>1</b> clue per event (so choose wisely). Such limits are in place to protect the privacy and avoid cyberbullying of players who were offended and reported the violation.--></p>
 To all the captains that assume people are bots and state "If you are not - please say so in chat":
-<blockquote>AmicuNoa: ...creating an unpleasant situation by forcing an unwanted contact ... is harassment</blockquote>
+<blockquote style="margin-bottom: 0px;">AmicuNoa: ...creating an unpleasant situation by forcing an unwanted contact ... is harassment</blockquote>
 
 <details>
-	<summary>tatsuchan90</summary>
-	<p>According to L0ne_Hermit in Teddiosg's channel on 03/02/2023:</p>
-	<blockquote>you probably can DM tatsuchan for the excel list LUL. ya tatsu always ask CTV to intoduce importing excel method to mass ban botters... i think she has an excel for it ready</blockquote>
-	<p>But, <a href="https://discord.com/channels/500415557800296449/517216400197025793/1065035376277868675" target="_blank" rel="noopener noreferrer">according to CTV</a> (<a href="https://discord.com/channels/500415557800296449/517216400197025793/1074116879158878238" target="_blank" rel="noopener noreferrer">this message is even pinned now</a>):</p>
-	<blockquote>Starting 17/01/2023, any accounts that are flagged in our internal systems as botting, cheating, automating, or exploiting any CTV games will be issued a permanent ban from that game in which the violation occurred.</blockquote>
+	<summary>tatsuchan90 et al.</summary>
+	<p style="margin-bottom: 0px;">According to L0ne_Hermit in Teddiosg's channel on 03/02/2023:</p>
+	<blockquote style="margin-bottom: 0px;">you probably can DM tatsuchan for the excel list LUL. ya tatsu always ask CTV to intoduce importing excel method to mass ban botters... i think she has an excel for it ready</blockquote>
+	<p style="margin-bottom: 0px;">But, <a href="https://discord.com/channels/500415557800296449/517216400197025793/1065035376277868675" target="_blank" rel="noopener noreferrer">according to CTV</a> (<a href="https://discord.com/channels/500415557800296449/517216400197025793/1074116879158878238" target="_blank" rel="noopener noreferrer">this message is even pinned now</a>):</p>
+	<blockquote style="margin-bottom: 0px;">Starting 17/01/2023, any accounts that are flagged in our internal systems as botting, cheating, automating, or exploiting any CTV games will be issued a permanent ban from that game in which the violation occurred.</blockquote>
 	<p>So who is the liar here? L0ne_Hermit stating that tatsuchan90 has a list of botters? tatsuchan90 providing a list of players which she calls "botters" (aka harassment)? or CTV claiming to have banned all bot accounts on 17/01/2023? There statements don't add up. P.S. Good luck picking the last option :smirk:</p>
-	<p style="margin-bottom:0px">Apply same reasoning to a similar case with <a href="https://github.com/gamecowtv/Stream-Raiders-Botters" target="_blank" rel="noopener noreferrer">GameCowTV</a></p>
+	<p style="margin-bottom:0px"><a href="https://github.com/gamecowtv/Stream-Raiders-Botters" target="_blank" rel="noopener noreferrer">GameCowTV</a> goes the next mile to point our their own violation in <a href="https://discord.com/channels/500415557800296449/693132785967169596/1093818110668177468" target="_blank" rel="noopener noreferrer">discord</a>. :rofl:</p>
 </details>
 
 <p>CTV "claim" to uphold the community guidelines (<a href="https://www.twitch.tv/videos/1666884105" target="_blank" rel="noopener noreferrer">CTV DEV AMA</a>) but only mention botting specifically, without any word on harassment. Recently <a href="https://twitter.com/StreamRaiders/status/1615492162119933957" target="_blank" rel="noopener noreferrer">this stance</a> on ignoring harassment issues and only focusing on botting has been <a href="https://discord.com/channels/500415557800296449/517216400197025793/1065035376277868675" target="_blank" rel="noopener noreferrer">reiterated</a> multiple <a href="https://discord.com/channels/500415557800296449/517940809950035968/1079812911821750314" target="_blank" rel="noopener noreferrer">times</a>. Furthermore, they permit <a href="https://discord.com/channels/500415557800296449/500415558257344514/1057722799642390649" target="_blank" rel="noopener noreferrer">members of the "elite stream team"</a> <span style="color: #bbb">(Message has been removed many weeks later. Unclear if by the author coming to their sences or by a diligent moderator finally enforcing the rules, either way :wave:)</span> to promote harassment with their lack of understanding how the game mechanics (particularly event limits for loyalty chests) work. The harassment will doubtfully stop spreading faster than COVID19 until CTV start to actually enforce their own Guidelines. In other words, never. Oh, I'm sorry, rules and guidelines do not apply to people generating income for you? My bad... :point_right:</p>
+
+<p>Unsurprisingly CTV is currently <a href="https://www.twitch.tv/videos/1772574632" target="_blank" rel="noopener noreferrer">experiencing financial issues</a> now that people begin to wrap their heads (and cease further support of the company) around the fact that the Community Guidelines mean absolutelly nothing to CTV and CTV has no intention to <b>ACTUALLY</b> enforce them. Now may be already too late to begin enforcing the guidelines since many people have lost their trust in CTV.</p>
 
 <!-- <p><strong>P.S.</strong> If you got banned by one of these captains while they were in your favorites and now you have a blank favorite taking up space on your captain selection screen - get in touch, we can help you remove them without waiting an eternity for a reply from support and without using any 3rd party applications.</p> -->
 
 <!-- <p style="font-size:larger"><b>Thanks to all players who report harassment incidents (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p> -->
 
-<blockquote><p><a href="https://discord.com/channels/500415557800296449/500415558257344514/992978656152535090" target="_blank" rel="noopener noreferrer">[2 July, 2022]</a> ctv_kermond: ... calling out specific Captains is a specific no-no - you can use the Reporting function for that!</p></blockquote>
+<blockquote style="margin-bottom: 0px;"><p><a href="https://discord.com/channels/500415557800296449/500415558257344514/992978656152535090" target="_blank" rel="noopener noreferrer">[2 July, 2022]</a> ctv_kermond: ... calling out specific Captains is a specific no-no - you can use the Reporting function for that!</p></blockquote>
 
-<p>But calling out specific Players is a specific yes-yes, apparently. It is common knowledge that all reports are ignored. You might as well toss a coin into a wishing well for a better effect.</p>
+<p style="margin-bottom: 0px;">But calling out specific Players is a specific yes-yes, apparently. It is common knowledge that all reports are ignored. You might as well toss a coin into a wishing well for a better effect.</p>
 
 <details>
 	<summary style="font-size:smaller">Debunking common botting accusations/harassment</summary>
@@ -128,7 +130,16 @@ To all the captains that assume people are bots and state "If you are not - plea
 	</details>
 </details>
 
-<p>All these harassing captains are a nuisance and should be banned. Their typical behavior is to offend (often kicked off by members of their chat) new players placing in their battles, get excited about more rewards after the battles, immediately decide to avoid granting rewards to these players, get very surprised when they leave due to the harassment never to return causing several losses in a row as the game scaling adjusts as well as dwindling number of battle rewards. Yet they don't bother to appologize for the harassment.</p>
+<p style="margin-bottom: 0px;">All these harassing captains are a nuisance and should be banned. Their typical behavior is to offend (often kicked off by members of their chat) new players placing in their battles, get excited about more rewards after the battles, immediately decide to avoid granting rewards to these players, get very surprised when they leave due to the harassment never to return causing several losses in a row as the game scaling adjusts as well as dwindling number of battle rewards. Yet they don't bother to appologize for the harassment.</p>
+
+<details>
+	<summary style="font-size:smaller">Example of such behavior (with audio)</summary>
+	<p style="font-size:smaller;margin-bottom: 0px;">acey1234tv and ShrebTV:</p>
+	<video width="350" height="480" controls preload="none">
+		<source src="/assets/videos/1795944784.webm" type="video/webm">
+		Your browser does not support the video tag.
+	</video> 
+</details>
 
 <!--<p>While CTV still refuses to enforce the Guidelines regarding harassment, several violators have finally received some well-deserved payback: <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073255935377690685" target="_blank" rel="noopener noreferrer">tatsuchan90</a>, <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073256137425694790" target="_blank" rel="noopener noreferrer">Shellsmiley</a>, <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073257527933939763" target="_blank" rel="noopener noreferrer">Commander_RC</a>, <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073263733436063794" target="_blank" rel="noopener noreferrer">RealAlize</a>.</p>-->
 

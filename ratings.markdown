@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Ratings
-description: How reliable are Stream Raiders captains at running their battles on time?
+description: Best Streamraiders Stream Raiders captains
 permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
 
 ##### Over **1900** players have used this table to improve their game enjoyment during the last event alone!
 
-### Honorary *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:
+### *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:
 
 {%- comment -%}###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:rel="noopener noreferrer"} are obviously not eligible.{%- endcomment -%}
 
@@ -36,7 +36,7 @@ permalink: /ratings/
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
     {%- assign effective = entry[1].c | minus: entry[1].l | times: 1.0 | divided_by: daysSince | round: 2 -%}
     {%- assign efficiency = entry[1].c | times: 100.0 | divided_by: battles | round: 2 -%}
-    <td>{%- if site.data.names contains my_key -%}<a href="https://twitch.tv/{{ site.data.names[my_key] }}" target="_blank" title="Battles on record: {{ battles }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ rating }}</td><td>{{ effective }}</td><td>{{ efficiency }}%</td></tr>
+    <td>{%- if site.data.names contains my_key -%}<a href="https://www.twitch.tv/{{ site.data.names[my_key] }}" target="_blank" title="Battles on record: {{ battles }}">{{ site.data.names[my_key] }}</a>{%- else -%}<b>MISSING NAME, SORRY({{-my_key-}})</b>{%- endif -%}</td><td>{{ rating }}</td><td>{{ effective }}</td><td>{{ efficiency }}%</td></tr>
   {%- endunless -%}
   {%- endfor %}
 </table>

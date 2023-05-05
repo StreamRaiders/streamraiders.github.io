@@ -1,9 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Main
+description: What is Streamraiders Stream Raiders reliable captains
 ---
 
 ## How well are Stream Raiders captains at following the Guidelines?

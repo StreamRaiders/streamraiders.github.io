@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Explorer
-description: Live game data analysis
+description: Live Streamraiders Stream Raiders game data
 permalink: /explorer/
 ---
 <style>
