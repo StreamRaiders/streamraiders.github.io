@@ -148,7 +148,9 @@ To all the captains that assume people are bots and state "If you are not - plea
 </div>
 <div style="flex:0 25%">
 
-{% if site.data.names and site.data.violators %}
+<p style="cursor:pointer; font-size:x-large; text-align:justify; user-select:none;">Due to the recent DDOS attacks on this page (and not the website as a whole) this list has been hidden. You can request this list by sending <a href="mailto:support@captain.tv?subject=List of Community Guidelines violators">an e-mail</a> with the subject line "List of Community Guidelines violators".</p>
+
+<!--{% if site.data.names and site.data.violators %}
 
 {%- for violator in site.data.violators -%}
   {%- assign my_key = violator | string -%}
@@ -173,8 +175,6 @@ To all the captains that assume people are bots and state "If you are not - plea
 {%- endfor %}
 </table>
 
-<p style="font-size:x-small; margin-top:5pt">Lower bound estimates for the monthly CTV income from captains which have not been suspended for their violations:<img src="/assets/images/LowerBound.png" alt="Lower bound estimates"></p>
-
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
@@ -189,6 +189,8 @@ $(document).ready( function () {
 } );
 </script>
 
-{% endif %}
+{% endif %}-->
+
+<p style="font-size:x-small; margin-top:5pt">Lower bound estimates for the monthly CTV income from captains which have not been suspended for their violations:<img src="/assets/images/LowerBound.png" alt="Lower bound estimates"></p>
 
 </div>

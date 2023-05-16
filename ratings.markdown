@@ -15,7 +15,7 @@ permalink: /ratings/
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
 {%- assign daysSince = 'today' | date: '%s' | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 -%}
 
-{% if site.data.lames and site.data.names and site.data.violators %}
+{% if site.data.lames and site.data.names %}
 {%- assign totalShown = 0 %}
 
 <table id="ratings-table">
@@ -30,7 +30,7 @@ permalink: /ratings/
   {%- for entry in site.data.lames -%}
   {%- assign my_key = entry[0] | string -%}
   {%- assign battles = entry[1].c | plus: entry[1].l -%}
-  {% unless site.data.violators contains my_key or battles < daysSince %}
+  {% unless battles < daysSince %}
   {%- assign totalShown = totalShown | plus:1 %}
   <tr>
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
