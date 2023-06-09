@@ -6,7 +6,7 @@ permalink: /ratings/
 ---
 #### Since March 24, 2022 (Pixel Shogunate event), last update: see Main page.
 
-##### Over **1900** players have used this table to improve their game enjoyment during the last event alone!
+##### Over **2000** players have used this table to improve their game enjoyment during the last event alone!
 
 ### *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:
 

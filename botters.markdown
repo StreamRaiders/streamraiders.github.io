@@ -26,7 +26,7 @@ permalink: /botters/
 <div style="display:flex">
 <div style="flex:1; margin-right:10pt">
 
-<p style="text-align:justify">The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner. They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity.</p>
+<p style="text-align:justify">The following players have violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> by operating multiple accounts through third-party clients in an automated manner. They have admitted on multiple occasions to have extensive knowledge about bot operations. They have accused other players of botting to deceive the streamer and distract from their own bot accounts to get more rewards from battles and skins from skinathons. Of course, most of them would deny any such activity. <a href="https://twitter.com/Vincent_Ntp/status/1640960446898515968" target="_blank" rel="noopener noreferrer">Some people</a> even go as far as to accuse us of defamation without providing any evidence to support their claim or merely moving a finger to find the obvious evidence supporting our classification. :unamused:</p>
 
 <details>
 	<summary>Example lies</summary>
@@ -122,7 +122,7 @@ permalink: /botters/
     {%- endif -%}
   {%- endfor -%}
   {%- if shouldShow %}
-  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-&entry.354761549=continue" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
+  <tr><td><a href="https://docs.google.com/forms/d/e/1FAIpQLScMww5NMZzZLDgQnmrCSlQ-yL_l6qTrBEDxwwOds47_h10-hQ/viewform?entry.493095195=Cheating%2FAutomating%2FExploiting&entry.1613546988={{ bot[1].userName }}&entry.1606568074=-" target="_blank" rel="noopener noreferrer">{{ bot[1].userName }}</a>
     {%- assign totalShown = totalShown | plus:1 -%}
 </td></tr>
   {%- endif -%}
