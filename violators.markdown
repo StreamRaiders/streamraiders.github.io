@@ -133,12 +133,43 @@ To all the captains that assume people are bots and state "If you are not - plea
 <p style="margin-bottom: 0px;">All these harassing captains are a nuisance and should be banned. Their typical behavior is to offend (often kicked off by members of their chat) new players placing in their battles, get excited about more rewards after the battles, immediately decide to avoid granting rewards to these players, get very surprised when they leave due to the harassment never to return causing several losses in a row as the game scaling adjusts as well as dwindling number of battle rewards. Yet they don't bother to appologize for the harassment.</p>
 
 <details>
-	<summary style="font-size:smaller">Example of such behavior (with audio)</summary>
-	<p style="font-size:smaller;margin-bottom: 0px;">acey1234tv and ShrebTV:</p>
+	<summary style="font-size:smaller">Examples of such behavior (with audio)</summary>
+	<p style="font-size:smaller;margin-bottom: 0px;font-weight: bold;">acey1234tv and ShrebTV:</p>
 	<video width="350" height="480" controls preload="none">
 		<source src="/assets/videos/1795944784.webm" type="video/webm">
 		Your browser does not support the video tag.
-	</video> 
+	</video>
+	<p style="font-size:smaller;margin-bottom: 0px;font-weight: bold;">Ninja_Pringles and AeroGarfield29<span style="font-weight: normal;"> (a known violator and, for some reason, still a partner)</span>:</p>
+	<ol style="display:flex;flex-wrap:wrap">
+		<li style="flex:1 1 350px">
+			<p style="font-size:smaller;margin-bottom: 0px;">Initiating harassment of players and encouraging the streamer to support the bullying while providing no solid evidence and displaying own lack of reasoning (e.g., "I have no idea").</p>
+			<video width="350" height="480" controls preload="none">
+				<source src="/assets/videos/1860524105.part1.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+		</li>
+		<li style="flex:1 1 350px">
+			<p style="font-size:smaller;margin-bottom: 0px;">Intense nameshaming with more assumptions (e.g., "I think") instead of solid facts, leading to the streamer rewarding the harasser with additional loot.</p>
+			<video width="350" height="480" controls preload="none">
+				<source src="/assets/videos/1860524105.part2.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+		</li>
+		<li style="flex:1 1 350px">
+			<p style="font-size:smaller;margin-bottom: 0px;">Players from the previous battle leave after being bullied and harassed by the streamer and this chatter. The harasser immediately jump in to suggest that their claims are true, completelly ignoring the fact that they just violated the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>. Next they lead the streamer to solidify their bullying by banning random players and forcing them to get into chat and plead for their "humanity".</p>
+			<video width="350" height="480" controls preload="none">
+				<source src="/assets/videos/1860524105.part3.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+		</li>
+		<li style="flex:1 1 350px">
+			<p style="font-size:smaller;margin-bottom: 0px;">Harassing more players and further encouraging the streamer to violate the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>. Including explicitly requesting not to ban themselves despite having violated those guidelines. Afterwards, encouraging the streamer to submit a false accusation to CTV staff and get the streamer into trouble.</p>
+			<video width="350" height="480" controls preload="none">
+				<source src="/assets/videos/1860524105.part4.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+		</li>
+	</ol>
 </details>
 
 <!--<p>While CTV still refuses to enforce the Guidelines regarding harassment, several violators have finally received some well-deserved payback: <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073255935377690685" target="_blank" rel="noopener noreferrer">tatsuchan90</a>, <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073256137425694790" target="_blank" rel="noopener noreferrer">Shellsmiley</a>, <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073257527933939763" target="_blank" rel="noopener noreferrer">Commander_RC</a>, <a href="https://discord.com/channels/500415557800296449/500415558257344514/1073263733436063794" target="_blank" rel="noopener noreferrer">RealAlize</a>.</p>-->
@@ -148,9 +179,9 @@ To all the captains that assume people are bots and state "If you are not - plea
 </div>
 <div style="flex:0 25%">
 
-<p style="cursor:pointer; font-size:x-large; text-align:justify; user-select:none;">Due to the recent DDOS attacks on this page (and not the website as a whole) this list has been hidden. You can request this list by sending <a href="mailto:support@captain.tv?subject=List of Community Guidelines violators">an e-mail</a> with the subject line "List of Community Guidelines violators".</p>
+<!--<p style="cursor:pointer; font-size:x-large; text-align:justify; user-select:none;">Due to the recent DDOS attacks on this page (and not the website as a whole) this list has been hidden. You can request this list by sending <a href="mailto:support@captain.tv?subject=List of Community Guidelines violators">an e-mail</a> with the subject line "List of Community Guidelines violators".</p>-->
 
-<!--{% if site.data.names and site.data.violators %}
+{% if site.data.names and site.data.violators %}
 
 {%- for violator in site.data.violators -%}
   {%- assign my_key = violator | string -%}
@@ -189,7 +220,7 @@ $(document).ready( function () {
 } );
 </script>
 
-{% endif %}-->
+{% endif %}
 
 <p style="font-size:x-small; margin-top:5pt">Lower bound estimates for the monthly CTV income from captains which have not been suspended for their violations:<img src="/assets/images/LowerBound.png" alt="Lower bound estimates"></p>
 

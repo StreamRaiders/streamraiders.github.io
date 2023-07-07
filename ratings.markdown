@@ -29,8 +29,8 @@ permalink: /ratings/
   </thead>
   {%- for entry in site.data.lames -%}
   {%- assign my_key = entry[0] | string -%}
+  {% unless entry[1].c < daysSince %}
   {%- assign battles = entry[1].c | plus: entry[1].l -%}
-  {% unless battles < daysSince %}
   {%- assign totalShown = totalShown | plus:1 %}
   <tr>
     {%- assign rating = entry[1].c | times: 1.0 | divided_by: 100 | minus: entry[1].l -%}
