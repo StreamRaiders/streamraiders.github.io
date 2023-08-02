@@ -86,7 +86,22 @@ permalink: /botters/
     </tr>
   </thead>
 {%- assign totalShown = 0 -%}
-{%- assign cutoffTS = 'today' | date:'%s' | minus:3456000 -%}
+
+{%- assign startsList = '2022-07-22|2022-08-19|2022-09-02|2022-10-14|2022-10-28|2022-11-04|2022-11-18|2022-12-22|2023-01-27|2023-02-24|2023-03-03|2023-03-23|2023-04-21|2023-05-19|2023-06-15|2023-07-12' | split: '|' -%}
+{%- assign starts = '' | split: '|' -%}
+{%- for stamp in startsList -%}
+  {%- assign value = stamp | date:'%s' | plus:0 -%}
+  {%- assign starts = starts | push:value -%}
+{%- endfor -%}
+
+{%- assign endsList = '2022-07-29|2022-08-26|2022-09-09|2022-10-21|2022-11-04|2022-11-11|2022-11-25|2023-01-06|2023-02-03|2023-03-03|2023-03-10|2023-03-31|2023-04-28|2023-05-27|2023-06-23|2023-07-21' | split: '|' -%}
+{%- assign ends = '' | split: '|' -%}
+{%- for stamp in endsList -%}
+  {%- assign value = stamp | date:'%s' | plus:0 -%}
+  {%- assign ends = ends | push:value -%}
+{%- endfor -%}
+
+<!--{{ starts | inspect }} {{ ends | inspect }}-->
 {%- for bot in site.data.bots -%}
   {%- assign shouldShow = false -%}
   {%- for entry in bot[1].activity -%}
@@ -95,42 +110,40 @@ permalink: /botters/
     {%- comment -%}
     Workarounds for recorded intervals of 7 or more days
     {%- endcomment -%}
-    {%- if activityStart >= 1658448000 and activityStart <= 1659052800 and activityEnd >= 1658448000 and activityEnd <= 1659052800 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 1-->
-    {%- elsif activityStart >= 1660867200 and activityStart <= 1661472000 and activityEnd >= 1660867200 and activityEnd <= 1661472000 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 2-->
-    {%- elsif activityStart >= 1662076800 and activityStart <= 1662681600 and activityEnd >= 1662076800 and activityEnd <= 1662681600 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 3-->
-    {%- elsif activityStart >= 1665705600 and activityStart <= 1666310400 and activityEnd >= 1665705600 and activityEnd <= 1666310400 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 4-->
-    {%- elsif activityStart >= 1666915200 and activityStart <= 1667520000 and activityEnd >= 1666915200 and activityEnd <= 1667520000 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 5-->
-    {%- elsif activityStart >= 1667520000 and activityStart <= 1668124800 and activityEnd >= 1667520000 and activityEnd <= 1668124800 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 6-->
-    {%- elsif activityStart >= 1668729600 and activityStart <= 1669334400 and activityEnd >= 1668729600 and activityEnd <= 1669334400 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 7-->
-    {%- elsif activityStart >= 1671667200 and activityStart <= 1672963200 and activityEnd >= 1671667200 and activityEnd <= 1672963200 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 8-->
-    {%- elsif activityStart >= 1674777600 and activityStart <= 1675382400 and activityEnd >= 1674777600 and activityEnd <= 1675382400 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 9-->
-    {%- elsif activityStart >= 1677196800 and activityStart <= 1677801600 and activityEnd >= 1677196800 and activityEnd <= 1677801600 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 10-->
-    {%- elsif activityStart >= 1677801600 and activityStart <= 1678406400 and activityEnd >= 1677801600 and activityEnd <= 1678406400 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 11-->
-    {%- elsif activityStart >= 1679529600 and activityStart <= 1680220800 and activityEnd >= 1679529600 and activityEnd <= 1680220800 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 12-->
-    {%- elsif activityStart >= 1682035200 and activityStart <= 1682640000 and activityEnd >= 1682035200 and activityEnd <= 1682640000 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 13-->
-    {%- elsif activityStart >= 1684454400 and activityStart <= 1685145600 and activityEnd >= 1684454400 and activityEnd <= 1685145600 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 14-->
-    {%- elsif activityStart >= 1686787200 and activityStart <= 1687478400 and activityEnd >= 1686787200 and activityEnd <= 1687478400 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 15-->
-    {%- elsif activityStart >= 1689120000 and activityStart <= 1689897600 and activityEnd >= 1689120000 and activityEnd <= 1689897600 -%}
-      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} 16-->
+    {%- if activityStart >= starts[0] and activityStart <= ends[0] and activityEnd >= starts[0] and activityEnd <= ends[0] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 0-->
+    {%- elsif activityStart >= starts[1] and activityStart <= ends[1] and activityEnd >= starts[1] and activityEnd <= ends[1] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 1-->
+    {%- elsif activityStart >= starts[2] and activityStart <= ends[2] and activityEnd >= starts[2] and activityEnd <= ends[2] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 2-->
+    {%- elsif activityStart >= starts[3] and activityStart <= ends[3] and activityEnd >= starts[3] and activityEnd <= ends[3] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 3-->
+    {%- elsif activityStart >= starts[4] and activityStart <= ends[4] and activityEnd >= starts[4] and activityEnd <= ends[4] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 4-->
+    {%- elsif activityStart >= starts[5] and activityStart <= ends[5] and activityEnd >= starts[5] and activityEnd <= ends[5] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 5-->
+    {%- elsif activityStart >= starts[6] and activityStart <= ends[6] and activityEnd >= starts[6] and activityEnd <= ends[6] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 6-->
+    {%- elsif activityStart >= starts[7] and activityStart <= ends[7] and activityEnd >= starts[7] and activityEnd <= ends[7] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 7-->
+    {%- elsif activityStart >= starts[8] and activityStart <= ends[8] and activityEnd >= starts[8] and activityEnd <= ends[8] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 8-->
+    {%- elsif activityStart >= starts[9] and activityStart <= ends[9] and activityEnd >= starts[9] and activityEnd <= ends[9] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 9-->
+    {%- elsif activityStart >= starts[10] and activityStart <= ends[10] and activityEnd >= starts[10] and activityEnd <= ends[10] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 10-->
+    {%- elsif activityStart >= starts[11] and activityStart <= ends[11] and activityEnd >= starts[11] and activityEnd <= ends[11] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 11-->
+    {%- elsif activityStart >= starts[12] and activityStart <= ends[12] and activityEnd >= starts[12] and activityEnd <= ends[12] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 12-->
+    {%- elsif activityStart >= starts[13] and activityStart <= ends[13] and activityEnd >= starts[13] and activityEnd <= ends[13] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 13-->
+    {%- elsif activityStart >= starts[14] and activityStart <= ends[14] and activityEnd >= starts[14] and activityEnd <= ends[14] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 14-->
+    {%- elsif activityStart >= starts[15] and activityStart <= ends[15] and activityEnd >= starts[15] and activityEnd <= ends[15] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 15-->
     {%- else -%}
-      {%- if activityEnd > cutoffTS -%}
-        {%- assign shouldShow = true -%}
-      {%- endif -%}
+      {%- assign shouldShow = true -%}
     {%- endif -%}
   {%- endfor -%}
   {%- if shouldShow %}
