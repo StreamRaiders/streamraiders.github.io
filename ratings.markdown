@@ -8,9 +8,9 @@ permalink: /ratings/
 
 ##### Over **2000** players have used this table to improve their game enjoyment during the last event alone!
 
-### *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:
+###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:rel="noopener noreferrer"} are obviously not eligible.
 
-{%- comment -%}###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:rel="noopener noreferrer"} are obviously not eligible.{%- endcomment -%}
+{%- comment -%}### *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:{%- endcomment -%}
 
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
 {%- assign daysSince = 'today' | date: '%s' | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 -%}
