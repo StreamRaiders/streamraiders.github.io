@@ -10,6 +10,8 @@ permalink: /ratings/
 
 ###### Captains promoting this website to their community by sharing the link during an event will get a shoutout here for the duration of the next event. [Violators]({%link violators.markdown%}){:rel="noopener noreferrer"} are obviously not eligible.
 
+##### If a reduction of your rating was caused by server issues please e-mail <a href="mailto:support@captain.tv?subject=Battle error">support</a> with a VOD timestamp confirming that to improve your rating!
+
 {%- comment -%}### *MOST RELIABLE CAPTAIN* :hugs:[Treecle](https://www.twitch.tv/treecle){:target="_blank"}:hugs:{%- endcomment -%}
 
 {%- assign start = '24-03-2022 11:00:00' | date: '%s' -%}
