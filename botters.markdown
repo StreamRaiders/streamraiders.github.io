@@ -48,7 +48,7 @@ permalink: /botters/
 <!-- <p style="font-size:larger"><b>Thanks to all players who report botting activity (including factual evidence) to us directly, helping keeping this list up-to-date!</b></p> -->
 
 <h3 style="text-align:center; margin-top:15pt">How to detect bot accounts</h3>
-<p style="text-align:justify">Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having gold loyalty with the captain are bot accounts. Real players always reach gold loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
+<p style="text-align:justify">Accounts which place units in loyalty chest battles (loyalty skin chest, loyalty gold chest, loyalty token chest, loyalty scroll chest, boss chest, superboss chest) without having maximum loyalty with the captain are bot accounts. Real players always reach maximum loyalty at the start of each event first to maximize the loot since the number of loyalty chests per event is limited and the loot obtained is heavily determined by the color of the loyalty swords.</p>
 <p style="font-size:smaller; text-align:justify">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge (i.e., suffering from the <a href="https://en.wikipedia.org/wiki/Dunning-Kruger_effect" target="_blank" rel="noopener noreferrer">Dunning–Kruger effect</a>) or even straight up name shaming, thereby harassing the players, <a href="/violators/" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
 
 </div>
@@ -87,19 +87,21 @@ permalink: /botters/
   </thead>
 {%- assign totalShown = 0 -%}
 
-{%- assign startsList = '2022-07-22|2022-08-19|2022-09-02|2022-10-14|2022-10-28|2022-11-04|2022-11-18|2022-12-22|2023-01-27|2023-02-24|2023-03-03|2023-03-23|2023-04-21|2023-05-19|2023-06-15|2023-07-12' | split: '|' -%}
+{%- assign startsList = '2022-07-22|2022-08-19|2022-09-02|2022-10-14|2022-10-28|2022-11-04|2022-11-18|2022-12-22|2023-01-27|2023-02-24|2023-03-03|2023-03-23|2023-04-21|2023-05-19|2023-06-15|2023-07-12|2023-10-17|2023-11-11' | split: '|' -%}
 {%- assign starts = '' | split: '|' -%}
 {%- for stamp in startsList -%}
   {%- assign value = stamp | date:'%s' | plus:0 -%}
   {%- assign starts = starts | push:value -%}
 {%- endfor -%}
 
-{%- assign endsList = '2022-07-29|2022-08-26|2022-09-09|2022-10-21|2022-11-04|2022-11-11|2022-11-25|2023-01-06|2023-02-03|2023-03-03|2023-03-10|2023-03-31|2023-04-28|2023-05-27|2023-06-23|2023-07-21' | split: '|' -%}
+{%- assign endsList = '2022-07-29|2022-08-26|2022-09-09|2022-10-21|2022-11-04|2022-11-11|2022-11-25|2023-01-06|2023-02-03|2023-03-03|2023-03-10|2023-03-31|2023-04-28|2023-05-27|2023-06-23|2023-07-21|2023-10-25|2023-11-22' | split: '|' -%}
 {%- assign ends = '' | split: '|' -%}
 {%- for stamp in endsList -%}
   {%- assign value = stamp | date:'%s' | plus:0 -%}
   {%- assign ends = ends | push:value -%}
 {%- endfor -%}
+
+{%- assign cutoffTS = 'today' | date:'%s' | minus:6912000 -%}
 
 <!--{{ starts | inspect }} {{ ends | inspect }}-->
 {%- for bot in site.data.bots -%}
@@ -142,8 +144,14 @@ permalink: /botters/
       <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 14-->
     {%- elsif activityStart >= starts[15] and activityStart <= ends[15] and activityEnd >= starts[15] and activityEnd <= ends[15] -%}
       <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 15-->
+    {%- elsif activityStart >= starts[16] and activityStart <= ends[16] and activityEnd >= starts[16] and activityEnd <= ends[16] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 16-->
+    {%- elsif activityStart >= starts[17] and activityStart <= ends[17] and activityEnd >= starts[17] and activityEnd <= ends[17] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 17-->
     {%- else -%}
-      {%- assign shouldShow = true -%}
+      {%- if activityEnd > cutoffTS -%}
+        {%- assign shouldShow = true -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
   {%- if shouldShow %}
