@@ -87,14 +87,14 @@ permalink: /botters/
   </thead>
 {%- assign totalShown = 0 -%}
 
-{%- assign startsList = '2022-07-22|2022-08-19|2022-09-02|2022-10-14|2022-10-28|2022-11-04|2022-11-18|2022-12-22|2023-01-27|2023-02-24|2023-03-03|2023-03-23|2023-04-21|2023-05-19|2023-06-15|2023-07-12|2023-10-17|2023-11-11' | split: '|' -%}
+{%- assign startsList = '2022-07-22|2022-08-19|2022-09-02|2022-10-14|2022-10-28|2022-11-04|2022-11-18|2022-12-22|2023-01-27|2023-02-24|2023-03-03|2023-03-23|2023-04-21|2023-05-19|2023-06-15|2023-07-12|2023-10-17|2023-11-11|2023-12-05|2023-12-21' | split: '|' -%}
 {%- assign starts = '' | split: '|' -%}
 {%- for stamp in startsList -%}
   {%- assign value = stamp | date:'%s' | plus:0 -%}
   {%- assign starts = starts | push:value -%}
 {%- endfor -%}
 
-{%- assign endsList = '2022-07-29|2022-08-26|2022-09-09|2022-10-21|2022-11-04|2022-11-11|2022-11-25|2023-01-06|2023-02-03|2023-03-03|2023-03-10|2023-03-31|2023-04-28|2023-05-27|2023-06-23|2023-07-21|2023-10-25|2023-11-22' | split: '|' -%}
+{%- assign endsList = '2022-07-29|2022-08-26|2022-09-09|2022-10-21|2022-11-04|2022-11-11|2022-11-25|2023-01-06|2023-02-03|2023-03-03|2023-03-10|2023-03-31|2023-04-28|2023-05-27|2023-06-23|2023-07-21|2023-10-25|2023-11-22|2023-12-13|2024-01-03' | split: '|' -%}
 {%- assign ends = '' | split: '|' -%}
 {%- for stamp in endsList -%}
   {%- assign value = stamp | date:'%s' | plus:0 -%}
@@ -148,6 +148,10 @@ permalink: /botters/
       <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 16-->
     {%- elsif activityStart >= starts[17] and activityStart <= ends[17] and activityEnd >= starts[17] and activityEnd <= ends[17] -%}
       <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 17-->
+    {%- elsif activityStart >= starts[18] and activityStart <= ends[18] and activityEnd >= starts[18] and activityEnd <= ends[18] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 18-->
+    {%- elsif activityStart >= starts[19] and activityStart <= ends[19] and activityEnd >= starts[19] and activityEnd <= ends[19] -%}
+      <!--{{ bot[0] }} {{ bot[1].userName }} {{ entry[0] }} {{ entry[1] }} {{ activityStart }} {{ activityEnd }} 19-->
     {%- else -%}
       {%- if activityEnd > cutoffTS -%}
         {%- assign shouldShow = true -%}

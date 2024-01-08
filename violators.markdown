@@ -130,7 +130,7 @@ To all the captains that assume people are bots and state "If you are not - plea
 	</details>
 </details>
 
-<p style="margin-bottom: 0px;">All these harassing captains are a nuisance and should be banned. Their typical behavior is to offend (often kicked off by members of their chat) new players placing in their battles, get excited about more rewards after the battles, immediately decide to avoid granting rewards to these players, get very surprised when they leave due to the harassment never to return causing several losses in a row as the game scaling adjusts as well as dwindling number of battle rewards. Yet they don't bother to appologize for the harassment.</p>
+<p style="margin-bottom: 0px;">All these harassing captains (or "captains", it's amazing how many of these have stopped playing once you show their true behavior to the world) are a nuisance and should be banned. Their typical behavior is to offend (often kicked off by members of their chat) new players placing in their battles, get excited about more rewards after the battles, immediately decide to avoid granting rewards to these players, get very surprised when they leave due to the harassment never to return causing several losses in a row as the game scaling adjusts as well as dwindling number of battle rewards. Yet they don't bother to appologize for the harassment.</p>
 
 <details>
 	<summary style="font-size:smaller">Examples of such behavior (with audio)</summary>
