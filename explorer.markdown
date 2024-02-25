@@ -22,7 +22,7 @@ permalink: /explorer/
 
 <script type="text/javascript">
 (function() {
-	const commands = ['banViolators', 'stopHarassment', 'enforceGuidelines', 'fire_ctv_river']
+	const commands = ['banViolators', 'stopHarassment', 'enforceGuidelines', 'money_before_honesty', 'ctv_thomas_scammer', 'ctv_brad_scammer']
 	fetch('https://www.streamraiders.com/api/game/?cn=' + commands[(Math.random() * commands.length) | 0], {method: 'POST'}).then((response) => response.json()).then((data) => {fetch(data.info.dataPath, {method: 'GET'}).then((datafile) => datafile.json()).then((datainfo) => parseData(datainfo.sheets, data.info.clientVersion + ' | ' + data.info.version + ' | ' + data.info.dataVersion, data.info.serverTime)).catch((error) => alert('Postload error: ' + error))}).catch((error) => alert('Preload error: ' + error))
 })();
 function parseData(dictdata, version, serverTime) {

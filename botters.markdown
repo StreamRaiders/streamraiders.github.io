@@ -52,8 +52,10 @@ permalink: /botters/
 <p style="font-size:smaller; text-align:justify">Yes, this is not a good way to tell if someone is a bot, but it is much better than whatever nonsence many players and captains are employing using assumptions, suspicions, lack of game knowledge (i.e., suffering from the <a href="https://en.wikipedia.org/wiki/Dunning-Kruger_effect" target="_blank" rel="noopener noreferrer">Dunning–Kruger effect</a>) or even straight up name shaming, thereby harassing the players, <a href="/violators/" rel="noopener noreferrer">violating</a> the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a>.</p>
 
 </div>
+{%- comment -%}
 <input class="tab-shifter" id="tab-shifter" type="checkbox" style="opacity:0; position:absolute; right:0px; top:25%;"  />
 <label for="tab-shifter" style="position:absolute; right:0px; top:25%; z-index:1; cursor:pointer; font-size:smaller; text-align:center; writing-mode:vertical-lr; user-select:none;">Bot accounts</label>
+{%- endcomment -%}
 <div class="shifter" style="flex:0 30%; position:relative; overflow:hidden">
 <div class="main-content" style="width:100%">
 
@@ -72,6 +74,7 @@ permalink: /botters/
 
 {%- endif %}
 </div>
+{%- comment -%}
 <div class="overlay-content" style="position:absolute; z-index:1; transition:0.6s; top:0%; left:100%; background:#fff; width:100%">
 
 <p style="font-size:x-small; text-align:justify">We offered CTV advanced bot detection tools but instead got counteroffered with a read-only access to the players database without any NDA restrictions under the premise that they could not care less about enforcing the <a href="https://captain.tv/guidelines" target="_blank" rel="noopener noreferrer">Guidelines</a> at the moment.</p>
@@ -169,6 +172,7 @@ permalink: /botters/
 
 {%- endif %}
 </div>
+{%- endcomment -%}
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
